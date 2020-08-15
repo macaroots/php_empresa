@@ -1,0 +1,40 @@
+funcionarios
+	id INT PK
+	nome VARCHAR(45)
+	telefone VARCHAR(45)
+	estado CHAR(2) FK
+
+habilidades
+	id INT PK
+	nome VARCHAR(45)
+	
+funcionarios_tem_habilidades
+	id_funcionario INT PK FK
+	id_habilidade INT PK FK
+	
+estados
+	sigla CHAR(2) PK
+	nome VARCHAR(45)
+	
+departamentos
+	id INT PK
+	nome VARCHAR(45)
+	id_chefe INT FK
+	
+cargos
+	id INT PK
+	nome VARCHAR(45)
+	id_departamento INT FK
+	salario FLOAT
+	
+funcionarios_tem_cargos
+	id_funcionario INT PK FK
+	id_cargo INT PK FK
+	data_admissao DATE
+	data_demissao DATE
+	
+noticias
+	id INT PK
+	titulo VARCHAR(255)
+	data DATETIME
+	texto TEXT

@@ -15,7 +15,7 @@ class DAO_Estados extends DAO_Abstrato  {
 			
 			return $lista;
 		} catch (PDOException $e) {
-			//print 'Error!: ' . $e->getMessage(); 
+			throw $e; 
 			return null;
 		}
 
@@ -37,7 +37,7 @@ class DAO_Estados extends DAO_Abstrato  {
 			
 			return $id;			
 		} catch (PDOException $e) {
-			//print 'Error!: ' . $e->getMessage(); 
+			throw $e; 
 			return null;
 		}
 
@@ -57,7 +57,7 @@ class DAO_Estados extends DAO_Abstrato  {
 			$conexao = null;
 				
 		} catch (PDOException $e) {
-			//print 'Error!: ' . $e->getMessage(); 
+			throw $e; 
 			return null;
 		}
 
@@ -77,7 +77,7 @@ class DAO_Estados extends DAO_Abstrato  {
 			
 			return $linha;
 		} catch (PDOException $e) {
-			//print 'Error!: ' . $e->getMessage(); 
+			throw $e; 
 			return null;
 		}
 	}
@@ -94,7 +94,7 @@ class DAO_Estados extends DAO_Abstrato  {
 			$conexao = null;
 			
 		} catch (PDOException $e) {
-			//print 'Error!: ' . $e->getMessage(); 
+			throw $e; 
 			return null;
 		}
 	}

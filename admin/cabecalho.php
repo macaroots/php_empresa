@@ -3,7 +3,7 @@
 		<nav>
 			<ul>
 				<li><a href="/php_empresa/index.php">Ir para o site</a></li>
-				<li><a href="/php_empresa/admin/index.php">Início</a></li>
+				<li><a href="/php_empresa/admin/index.php">Admin</a></li>
 				<li>
 					Funcionários
 					<ul>
